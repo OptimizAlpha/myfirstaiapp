@@ -17,7 +17,7 @@ gemini_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 tweet_chain = tweet_prompt | gemini_model
 
 # Streamlit UI
-st.header("Tweet Generator")
+st.header("Tweet Generator by Anil")
 st.subheader("Generate tweets using Generative AI")
 
 topic = st.text_input("Topic")
@@ -29,6 +29,7 @@ if st.button("Generate"):
     st.write(response.content)
 
     
+
 
 
 

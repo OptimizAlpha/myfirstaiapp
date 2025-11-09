@@ -40,7 +40,7 @@ gemini_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 slides_chain = slides_prompt | gemini_model
 
 # Streamlit UI
-st.header("Slide Generator")
+st.header("Slide Generator by Anil")
 st.subheader("Generate slides using Generative AI")
 
 topic = st.text_input("Topic")
@@ -55,5 +55,6 @@ if st.button("Generate"):
     st.write(response.content)
 
     
+
 
 

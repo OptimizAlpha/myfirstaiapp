@@ -11,7 +11,7 @@ tweet_template = "Give me {number} tweets on {topic}"
 tweet_prompt = PromptTemplate(template=tweet_template, input_variables=["number", "topic"])
 
 # Initialize Gemini model
-gemini_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+gemini_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # Create the chain using the LCEL (LangChain Expression Language)
 tweet_chain = tweet_prompt | gemini_model
@@ -29,6 +29,7 @@ if st.button("Generate"):
     st.write(response.content)
 
     
+
 
 
 

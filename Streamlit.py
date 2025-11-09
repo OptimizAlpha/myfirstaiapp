@@ -1,4 +1,3 @@
-##pip install --upgrade langchain langchain-google-genai streamlit
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 import streamlit as st
@@ -30,5 +29,6 @@ if st.button("Generate"):
     st.write(response.content)
 
     
+
 
 
